@@ -243,7 +243,7 @@ def run_agent(agent_file, env_config, render=False):
 
 if __name__ == "__main__":
     env_config = {
-        "fuel_limit": 50
+        "fuel_limit": 5000
     }
     
     agent_score = run_agent("student_agent.py", env_config, render=True) 
