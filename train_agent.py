@@ -32,10 +32,10 @@ q_table = {}
 alpha = 0.1
 gamma = 0.99
 epsilon = 1.0
-epsilon_decay = 0.999
+epsilon_decay = 0.9999
 epsilon_min = 0.01
 max_steps = 10000
-num_episodes = 10000
+num_episodes = 100000
 
 for episode in range(num_episodes):
     env = FullTaxiEnv()
