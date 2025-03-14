@@ -4,11 +4,11 @@ import pickle
 import random
 import gym
 
+with open("q_table.pkl", "rb") as f:
+        q_table = pickle.load(f)
+
 def get_action(obs):
 
-    with open("q_table.pkl", "rb") as f:
-        q_table = pickle.load(f)
-        
     # TODO: Train your own agent
     # HINT: If you're using a Q-table, consider designing a custom key based on `obs` to store useful information.
     # NOTE: Keep in mind that your Q-table may not cover all possible states in the testing environment.
